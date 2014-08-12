@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target name="com.vogella.tycho.targetplatform" sequenceNumber="1">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.equinox.executable.feature.group" version="3.6.100.v20140603-1326"/>
+<unit id="org.eclipse.e4.rcp.feature.group" version="1.3.100.v20140606-1445"/>
+<unit id="org.eclipse.platform.sdk" version="4.4.0.I20140606-1215"/>
+<repository location="http://download.eclipse.org/releases/luna"/>
+</location>
+</locations>
+</target>

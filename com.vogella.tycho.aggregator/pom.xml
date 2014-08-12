@@ -1,0 +1,24 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.vogella.tychoexample</groupId>
+	<artifactId>com.vogella.tycho.aggregator</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	
+	<parent>
+		<groupId>com.vogella.tychoexample</groupId>
+		<artifactId>com.vogella.tycho.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../com.vogella.tycho.parent</relativePath>
+	</parent>
+
+	<modules>
+		<module>../com.vogella.build.targetdefinition</module>
+		<module>../com.vogella.tycho.plugin1</module>
+		<module>../com.vogella.tycho.rcp</module>
+		<module>../com.vogella.tycho.product</module>
+		<module>../com.vogella.tycho.feature</module>
+		<module>../com.vogella.tycho.update</module>
+		<module>../com.vogella.tycho.unittests</module>
+	</modules>
+</project>

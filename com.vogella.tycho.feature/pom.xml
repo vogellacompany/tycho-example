@@ -1,0 +1,14 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.vogella.tychoexample</groupId>
+		<artifactId>com.vogella.tycho.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../com.vogella.tycho.parent</relativePath>
+	</parent>
+	
+	<artifactId>com.vogella.tycho.feature</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>eclipse-feature</packaging>
+</project>

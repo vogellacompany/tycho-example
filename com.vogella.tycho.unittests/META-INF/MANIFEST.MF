@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Unittests
+Bundle-SymbolicName: com.vogella.tycho.unittests
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VOGELLA
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit;bundle-version="4.11.0",
+ com.vogella.tycho.plugin1;bundle-version="1.0.0"
