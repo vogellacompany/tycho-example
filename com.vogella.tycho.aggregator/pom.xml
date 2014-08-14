@@ -13,8 +13,9 @@
 	</parent>
 
 	<modules>
-		<module>../com.vogella.build.targetdefinition</module>
+	    <module>../com.vogella.build.targetdefinition</module>
 		<module>../com.vogella.tycho.plugin1</module>
+		<module>../com.vogella.tycho.plugin2</module>
 		<module>../com.vogella.tycho.rcp</module>
 		<module>../com.vogella.tycho.product</module>
 		<module>../com.vogella.tycho.feature</module>

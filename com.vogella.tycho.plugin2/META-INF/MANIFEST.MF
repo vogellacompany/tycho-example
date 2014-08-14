@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Plugin2
+Bundle-SymbolicName: com.vogella.tycho.plugin2
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VOGELLA
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: com.vogella.tycho.plugin1;bundle-version="1.0.0"
+Bundle-ClassPath: .,
+ lib/com.vogella.tycho.simplejar.jar

@@ -9,9 +9,29 @@
 	<properties>
 		<tycho.version>0.21.0</tycho.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
+		<eclipse-p2-repo.url>http://download.eclipse.org/releases/luna</eclipse-p2-repo.url>
 	</properties>
 
+	<repositories>
+		<repository>
+			<id>eclipse-p2-repo</id>
+			<url>${eclipse-p2-repo.url}</url>
+			<layout>p2</layout>
+		</repository>
+	</repositories>
+
+	<profiles>
+		<profile>
+			<id>build-individual-bundles</id>
+			<repositories>
+				<repository>
+					<id>eclipse-p2-repo</id>
+					<url>${eclipse-p2-repo.url}</url>
+					<layout>p2</layout>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
 
 	<build>
 		<plugins>
@@ -28,6 +48,7 @@
 
 				<configuration>
 					<!-- This defines the target definition file -->
+				<!-- 
 					<target>
 						<artifact>
 							<groupId>com.vogella.tychoexample</groupId>
@@ -35,6 +56,7 @@
 							<version>1.0.0-SNAPSHOT</version>
 						</artifact>
 					</target>
+					 -->
 					<environments>
 						<environment>
 							<os>linux</os>

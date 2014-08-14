@@ -11,6 +11,10 @@
                name="applicationCSS"
                value="platform:/plugin/com.vogella.tycho.rcp/css/default.css">
          </property>
+         <property
+               name="appName"
+               value="com.vogella.tycho.rcp">
+         </property>
       </product>
    </extension>
 
