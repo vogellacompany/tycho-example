@@ -1,0 +1,11 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.vogella.tychoexample</groupId>
+	<artifactId>com.vogella.tycho.aggregator</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<modules>
+	        <module>../com.vogella.build.aggregator</module>
+	</modules>
+</project>
+
