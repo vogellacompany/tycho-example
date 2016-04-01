@@ -1,7 +1,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.vogella.tycho</groupId>
-    <artifactId>com.vogella.tycho.bundles</artifactId>
+    <artifactId>com.vogella.tycho.releng</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     
@@ -9,11 +9,10 @@
         <groupId>com.vogella.tycho</groupId>
         <artifactId>com.vogella.tycho.root</artifactId>
         <version>1.0.0-SNAPSHOT</version>
-	<relativePath>../pom.xml</relativePath>
     </parent>
 
     <modules>
-        <module>com.vogella.tycho.plugin1</module>
- 	<module>com.vogella.tycho.rcp</module>
+        <module>com.vogella.tycho.update</module>
+	<module>com.vogella.tycho.product</module>
     </modules>
 </project>

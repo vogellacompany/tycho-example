@@ -9,12 +9,12 @@
         	<artifactId>com.vogella.tycho.configuration</artifactId>
         	<version>1.0.0-SNAPSHOT</version>
 		<relativePath>./releng/com.vogella.tycho.configuration</relativePath>
-    </parent>
+    	</parent>
 
 	<modules>
-	        <module>releng/com.vogella.tycho.configuration</module>
  		<module>bundles</module>
 		<module>features</module>
+		<module>releng</module>
 	</modules>
 </project>
 
