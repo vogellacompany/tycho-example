@@ -1,0 +1,17 @@
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.vogella.tycho</groupId>
+    <artifactId>com.vogella.tycho.features</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    
+    <parent>
+        <groupId>com.vogella.tycho</groupId>
+        <artifactId>com.vogella.tycho.root</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+
+    <modules>
+        <module>com.vogella.tycho.feature</module>
+    </modules>
+</project>
