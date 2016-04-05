@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RCP Integration Tests
+Bundle-SymbolicName: com.vogella.tycho.rcp.it.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VOGELLA
+Fragment-Host: com.vogella.tycho.rcp;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.junit;bundle-version="4.12.0",
+ org.hamcrest;bundle-version="1.1.0",
+ org.eclipse.swtbot.junit4_x;bundle-version="2.3.0",
+ org.eclipse.swtbot.swt.finder;bundle-version="2.3.0",
+ org.eclipse.swtbot.eclipse.junit.headless;bundle-version="2.3.0"
