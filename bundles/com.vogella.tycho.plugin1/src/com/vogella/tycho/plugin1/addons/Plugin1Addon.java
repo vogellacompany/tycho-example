@@ -8,6 +8,7 @@ import org.eclipse.e4.core.di.extensions.EventTopic;
 import org.eclipse.e4.ui.workbench.UIEvents;
 import org.osgi.service.event.Event;
 
+@SuppressWarnings("restriction")
 public class Plugin1Addon {
 
 	@Inject
