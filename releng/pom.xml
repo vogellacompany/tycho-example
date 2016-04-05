@@ -14,5 +14,6 @@
     <modules>
         <module>com.vogella.tycho.update</module>
 	<module>com.vogella.tycho.product</module>
+	<module>com.vogella.tycho.target</module>
     </modules>
 </project>
