@@ -21,10 +21,10 @@ public class TestMenus {
 	}
 
 	@Test
-	public void test() {
+	public void ensureSaveIsDisabledWhenNothingIsDirty() {
 		SWTBotMenu menu = bot.menu("File").menu("Save");
 		
-		assertThat("Save command in Menu is not enabled", !menu.isEnabled());
+		assertThat("Save command in menu is not enabled", !menu.isEnabled());
 	}
 
 }
