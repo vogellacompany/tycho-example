@@ -14,5 +14,6 @@
 
     <modules>
         <module>com.vogella.tycho.plugin1.tests</module>
+	<module>com.vogella.tycho.rcp.tests</module>
     </modules>
 </project>
