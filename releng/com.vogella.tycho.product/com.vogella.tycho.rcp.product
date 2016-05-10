@@ -106,7 +106,7 @@
 
    <features>
       <feature id="org.eclipse.e4.rcp"/>
-      <feature id="com.vogella.tycho.feature"/>
+      <feature id="com.vogella.tycho.feature" installMode="root"/>
       <feature id="org.eclipse.emf.ecore"/>
       <feature id="org.eclipse.emf.common"/>
       <feature id="org.eclipse.equinox.p2.core.feature"/>
