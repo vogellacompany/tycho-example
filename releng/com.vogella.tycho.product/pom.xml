@@ -38,6 +38,14 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+					<products>
+						<product>
+							<id>Tycho</id>
+							<rootFolder>vogella-tycho</rootFolder>
+						</product>
+					</products>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
