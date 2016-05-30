@@ -1,27 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="com.vogella.tycho.target" sequenceNumber="2">
+<?pde version="3.8"?><target name="com.vogella.tycho.target" sequenceNumber="5">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.platform.sdk" version="4.6.0.I20160317-0200"/>
-<unit id="org.eclipse.equinox.sdk.feature.group" version="3.12.0.v20160316-1445"/>
-<repository location="http://download.eclipse.org/eclipse/updates/4.6milestones"/>
-</location>
-<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.junit" version="4.12.0.v201504281640"/>
-<unit id="org.mockito" version="1.9.5.v201311280930"/>
-<unit id="org.hamcrest.core" version="1.3.0.v201303031735"/>
+<unit id="org.mockito" version="1.9.5.v201605172210"/>
+<unit id="org.mockito.source" version="1.9.5.v201605172210"/>
 <unit id="org.hamcrest" version="1.1.0.v20090501071000"/>
-<unit id="org.mockito.source" version="1.9.5.v201311280930"/>
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/S20160308060251/repository/"/>
+<unit id="org.hamcrest.text" version="1.1.0.v20090501071000"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.swtbot.feature.group" version="2.3.0.201506081302"/>
-<unit id="org.apache.log4j.source" version="1.2.15.v201012070815"/>
-<unit id="org.eclipse.swtbot.eclipse.test.junit.feature.group" version="2.3.0.201506081302"/>
-<unit id="org.apache.log4j" version="1.2.15.v201012070815"/>
-<unit id="org.eclipse.swtbot.source.feature.group" version="2.3.0.201506081302"/>
-<unit id="org.hamcrest.library" version="1.3.0.v201305281000"/>
-<repository location="http://download.eclipse.org/technology/swtbot/releases/latest/"/>
+<unit id="org.eclipse.platform.sdk" version="4.6.0.I20160529-2000"/>
+<unit id="org.eclipse.sdk.ide" version="4.6.0.I20160529-2000"/>
+<repository location="http://download.eclipse.org/eclipse/updates/4.6-I-builds"/>
 </location>
 </locations>
 </target>
