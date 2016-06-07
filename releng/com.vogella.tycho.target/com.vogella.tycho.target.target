@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="com.vogella.tycho.target" sequenceNumber="5">
+<?pde version="3.8"?><target name="com.vogella.tycho.target" sequenceNumber="6">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.mockito" version="1.9.5.v201605172210"/>
@@ -12,6 +12,11 @@
 <unit id="org.eclipse.platform.sdk" version="4.6.0.I20160529-2000"/>
 <unit id="org.eclipse.sdk.ide" version="4.6.0.I20160529-2000"/>
 <repository location="http://download.eclipse.org/eclipse/updates/4.6-I-builds"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.swtbot.feature.group" version="2.4.0.201604200752"/>
+<unit id="org.eclipse.swtbot.eclipse.test.junit.feature.group" version="2.4.0.201604200752"/>
+<repository location="http://download.eclipse.org/technology/swtbot/releases/latest/"/>
 </location>
 </locations>
 </target>
