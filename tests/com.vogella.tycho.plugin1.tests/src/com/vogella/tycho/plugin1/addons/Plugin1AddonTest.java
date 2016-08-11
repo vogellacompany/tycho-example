@@ -11,7 +11,6 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-import org.eclipse.swt.widgets.Shell;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InOrder;
@@ -21,7 +20,7 @@ import org.mockito.MockitoAnnotations;
 public class Plugin1AddonTest {
 	
 	@Mock
-	private Shell mockShell;
+	private InterfaceOfComplexFrameworkClass mockComplexFrameworkClass;
 	
 	@Before
 	public void setup() {
@@ -30,46 +29,46 @@ public class Plugin1AddonTest {
 
 	@Test
 	public void verifyCallTest() {
-		when(mockShell.getText()).thenReturn("Eclipse 4 RCP Application");
+		when(mockComplexFrameworkClass.getFoo()).thenReturn("Eclipse 4 RCP Application");
 		
 		Plugin1Addon plugin1Addon = new Plugin1Addon();
-		plugin1Addon.applicationStarted(null, mockShell);
+		plugin1Addon.applicationStarted(null, mockComplexFrameworkClass);
 		
 		// exactly once
-		verify(mockShell).getText();
+		verify(mockComplexFrameworkClass).getFoo();
 		
 		// exactly once
-		verify(mockShell, times(1)).getText();
+		verify(mockComplexFrameworkClass, times(1)).getFoo();
 
 		// at least once
-		verify(mockShell, atLeastOnce()).getText();
+		verify(mockComplexFrameworkClass, atLeastOnce()).getFoo();
 
 		// at least once
-		verify(mockShell, atLeast(1)).getText();
+		verify(mockComplexFrameworkClass, atLeast(1)).getFoo();
 
 		// at most once
-		verify(mockShell, atMost(1)).getText();
+		verify(mockComplexFrameworkClass, atMost(1)).getFoo();
 		
 		// only this method is called
-		verify(mockShell, only()).getText();
+		verify(mockComplexFrameworkClass, only()).getFoo();
 		
 		// ensure method is never called
-		verify(mockShell, never()).getBackground();
+		verify(mockComplexFrameworkClass, never()).isBar();
 	}
 	
 	@Test
 	public void verifyOrderTest() {
-		Shell secondShellMock = mock(Shell.class);
+		InterfaceOfComplexFrameworkClass secondComplexFrameworkClassMock = mock(InterfaceOfComplexFrameworkClass.class);
 		
 		Plugin1Addon plugin1Addon = new Plugin1Addon();
-		plugin1Addon.applicationStarted(null, mockShell);
-		plugin1Addon.applicationStarted(null, secondShellMock);
+		plugin1Addon.applicationStarted(null, mockComplexFrameworkClass);
+		plugin1Addon.applicationStarted(null, secondComplexFrameworkClassMock);
 		
 		// order of passed in varargs does not matter!
-		InOrder order = inOrder(secondShellMock, mockShell);
+		InOrder order = inOrder(secondComplexFrameworkClassMock, mockComplexFrameworkClass);
 
-		order.verify(mockShell).getText();
-		order.verify(secondShellMock).getText();
+		order.verify(mockComplexFrameworkClass).getFoo();
+		order.verify(secondComplexFrameworkClassMock).getFoo();
 		
 	}
 
