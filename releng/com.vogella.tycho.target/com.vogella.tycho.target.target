@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="com.vogella.tycho.target" sequenceNumber="9">
+<?pde version="3.8"?><target name="com.vogella.tycho.target" sequenceNumber="11">
 <locations>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.mockito" version="1.9.5.v201605172210"/>
-<unit id="org.mockito.source" version="1.9.5.v201605172210"/>
-<unit id="org.hamcrest" version="1.1.0.v20090501071000"/>
-<unit id="org.hamcrest.text" version="1.1.0.v20090501071000"/>
-<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
-</location>
-<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.swtbot.feature.group" version="2.4.0.201604200752"/>
-<unit id="org.eclipse.swtbot.eclipse.test.junit.feature.group" version="2.4.0.201604200752"/>
+<unit id="org.eclipse.swtbot.feature.group" version="2.5.0.201609021837"/>
+<unit id="org.eclipse.swtbot.eclipse.test.junit.feature.group" version="2.5.0.201609021837"/>
 <repository location="http://download.eclipse.org/technology/swtbot/releases/latest/"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.equinox.sdk.feature.group" version="3.12.0.v20160606-1311"/>
 <unit id="org.eclipse.sdk.ide" version="4.6.0.I20160606-1100"/>
 <repository location="http://download.eclipse.org/eclipse/updates/4.6"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.slf4j.api" version="1.7.2.v20121108-1250"/>
+<unit id="org.hamcrest.text" version="1.1.0.v20090501071000"/>
+<unit id="org.slf4j.api.source" version="1.7.2.v20121108-1250"/>
+<unit id="org.hamcrest" version="1.1.0.v20090501071000"/>
+<unit id="org.mockito.source" version="1.9.5.v201605172210"/>
+<unit id="ch.qos.logback.slf4j" version="1.0.7.v201505121915"/>
+<unit id="ch.qos.logback.slf4j.source" version="1.0.7.v201505121915"/>
+<unit id="org.mockito" version="1.9.5.v201605172210"/>
+<repository location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
 </location>
 </locations>
 </target>
