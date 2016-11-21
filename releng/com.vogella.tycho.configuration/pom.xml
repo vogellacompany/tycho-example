@@ -8,19 +8,17 @@
 		<tycho.version>0.25.0</tycho.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- Skip the deployment here, submodules can override this property -->
-		<maven.deploy.skip>true</maven.deploy.skip>
+		<!--maven.deploy.skip>true</maven.deploy.skip-->
 	</properties>
 
 	<distributionManagement>
 		<repository>
-			<id>nexus</id>
-			<name>Internal Releases</name>
-			<url>http://localhost:8081/nexus/content/repositories/releases/</url>
+		        <id>pdrone.828d10a6-c682-4d56-9d68-74dfe6dbb1e4</id>
+			<url>http://simon:8080/maven/828d10a6-c682-4d56-9d68-74dfe6dbb1e4</url>
 		</repository>
 		<snapshotRepository>
-			<id>nexus</id>
-			<name>Internal Releases</name>
-			<url>http://localhost:8081/nexus/content/repositories/snapshots/</url>
+	       		<id>pdrone.828d10a6-c682-4d56-9d68-74dfe6dbb1e4</id>
+        		<url>http://simon:8080/maven/828d10a6-c682-4d56-9d68-74dfe6dbb1e4</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -83,7 +81,7 @@
 				</configuration>
 			</plugin>
 			<!-- enable source feature generation -->
-			<plugin>
+			<!--plugin>
 				<groupId>org.eclipse.tycho.extras</groupId>
 				<artifactId>tycho-source-feature-plugin</artifactId>
 				<version>${tycho.version}</version>
@@ -109,7 +107,7 @@
 						</goals>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin-->
 		</plugins>
 	</build>
 </project>
