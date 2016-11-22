@@ -15,7 +15,9 @@ public class Plugin1Addon {
 	@Optional
 	public void applicationStarted(
 			@EventTopic(UIEvents.UILifeCycle.APP_STARTUP_COMPLETE) Event event, @Optional InterfaceOfComplexFrameworkClass complexFrameworkClass) {
-		System.out.println("App startet: " + complexFrameworkClass.getFoo());
+		if(complexFrameworkClass != null) {
+			System.out.println("App startet: " + complexFrameworkClass.getFoo());
+		}
 	}
 
 }
