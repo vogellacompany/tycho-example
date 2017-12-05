@@ -19,5 +19,4 @@ public class Plugin1Addon {
 			System.out.println("App startet: " + complexFrameworkClass.getFoo());
 		}
 	}
-// GIT snapshot test
 }
