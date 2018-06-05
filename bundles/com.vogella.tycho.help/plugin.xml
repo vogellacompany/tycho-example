@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.help.toc">
+      <toc
+            file="help/main.xml"
+            primary="true">
+      </toc>
+      <toc
+            file="help/reference.xml">
+      </toc>
+      <toc
+            file="help/api_docs.xml"
+            primary="false">
+      </toc>
+   </extension>
+
+</plugin>

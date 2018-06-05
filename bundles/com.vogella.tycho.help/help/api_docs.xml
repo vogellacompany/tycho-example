@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?NLS TYPE="org.eclipse.help.toc"?><toc label="Tycho Example API">
+<topic href="help/api-docs/javadoc/overview-summary.html" label="Tycho Example API">
+<topic label="Packages">
+<topic href="help/api-docs/javadoc/com/vogella/tycho/plugin1/addons/package-summary.html" label="com.vogella.tycho.plugin1.addons"/>
+</topic>
+<topic href="help/api-docs/javadoc/constant-values.html" label="Constant Values"/>
+<topic href="help/api-docs/javadoc/deprecated-list.html" label="Deprecated List"/>
+</topic>
+</toc>
