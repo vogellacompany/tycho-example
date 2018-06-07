@@ -1,0 +1,10 @@
+== Maven / Tycho build example image:https://travis-ci.org/vogellacompany/tycho-example.svg?branch=master["Build Status", link="https://travis-ci.org/vogellacompany/tycho-example"]
+
+Demonstrates the usage of the Maven Tycho 1.2.0 build system.
+
+* Pomless build for bundles, tests and features
+* P2 update sites
+* Product builds
+* Generate sources
+* Generate JavaDoc
+* Target definition build
