@@ -11,16 +11,7 @@
 		<!-- Skip the deployment here, submodules can override this property -->
 		<!--maven.deploy.skip>true</maven.deploy.skip -->
 	</properties>
-	<distributionManagement>
-		<repository>
-			<id>pdrone.828d10a6-c682-4d56-9d68-74dfe6dbb1e4</id>
-			<url>http://simon:8080/maven/828d10a6-c682-4d56-9d68-74dfe6dbb1e4</url>
-		</repository>
-		<snapshotRepository>
-			<id>pdrone.828d10a6-c682-4d56-9d68-74dfe6dbb1e4</id>
-			<url>http://simon:8080/maven/828d10a6-c682-4d56-9d68-74dfe6dbb1e4</url>
-		</snapshotRepository>
-	</distributionManagement>
+
 	<build>
 		<plugins>
 			<!--Enable the replacement of the SNAPSHOT version based on the last commit -->
@@ -119,6 +110,28 @@
 			</plugin>
 		</plugins>
 	</build>
+
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Internal Releases</name>
+			<url>http://nexus.minova.com:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Internal Snapshots</name>
+			<url>http://nexus.minova.com:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<scm>
+		<connection>scm:git:git://github.com/ingraban/tycho-example.git</connection>
+		<developerConnection>scm:git:git://github.com/ingraban/tycho-example.git</developerConnection>
+		<!-- <developerConnection>scm:git:git@github.com:ingraban/tycho-example.git</developerConnection> -->
+		<tag>HEAD</tag>
+	</scm>
+
 </project>
 
 
