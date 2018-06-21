@@ -17,5 +17,24 @@
 		<module>tests</module>
 		<module>releng</module>
 	</modules>
+
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<name>Internal Releases</name>
+			<url>http://nexus.minova.com:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<name>Internal Snapshots</name>
+			<url>http://nexus.minova.com:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<scm>
+		<connection>scm:git:https://github.com/ingraban/tycho-example.git</connection>
+		<developerConnection>scm:git:https://github.com/ingraban/tycho-example.git</developerConnection>
+	  <tag>HEAD</tag>
+  </scm>
 </project>
 
