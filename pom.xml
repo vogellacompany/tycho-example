@@ -5,18 +5,54 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<parent>
-        	<groupId>com.vogella.tycho</groupId>
-        	<artifactId>com.vogella.tycho.configuration</artifactId>
-        	<version>1.0.0-SNAPSHOT</version>
+		<groupId>com.vogella.tycho</groupId>
+		<artifactId>com.vogella.tycho.configuration</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
 		<relativePath>./releng/com.vogella.tycho.configuration</relativePath>
-    	</parent>
+	</parent>
 
 	<modules>
- 		<module>bundles</module>
+		<module>bundles</module>
 		<module>features</module>
 		<module>tests</module>
 		<module>releng</module>
 	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+					<preparationGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho.version}:update-eclipse-metadata
+						org.apache.maven.plugins:maven-scm-plugin:1.9.5:add
+						org.apache.maven.plugins:maven-scm-plugin:1.9.5:checkin</preparationGoals>
+					<completionGoals>org.eclipse.tycho:tycho-versions-plugin:${tycho.version}:update-eclipse-metadata
+						org.apache.maven.plugins:maven-scm-plugin:1.9.5:add
+						org.apache.maven.plugins:maven-scm-plugin:1.9.5:checkin</completionGoals>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>default-cli</id>
+						<goals>
+							<goal>add</goal>
+							<goal>checkin</goal>
+						</goals>
+						<configuration>
+							<includes>**/META-INF/MANIFEST.MF,**/feature.xml,**/*.product,**/category.xml</includes>
+							<excludes>**/target/**</excludes>
+							<message>Changing version to reflect pom versions for release</message>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 
 	<distributionManagement>
 		<repository>
@@ -34,10 +70,8 @@
 	<scm>
 		<connection>scm:git:git://github.com/ingraban/tycho-example.git</connection>
 		<developerConnection>scm:git:git://github.com/ingraban/tycho-example.git</developerConnection>
-		<!-- 
-		<developerConnection>scm:git:git@github.com:ingraban/tycho-example.git</developerConnection>
-		 -->
-	  <tag>HEAD</tag>
-  </scm>
+		<!-- <developerConnection>scm:git:git@github.com:ingraban/tycho-example.git</developerConnection> -->
+		<tag>HEAD</tag>
+	</scm>
 </project>
 
