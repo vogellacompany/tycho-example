@@ -32,8 +32,11 @@
 	</distributionManagement>
 
 	<scm>
-		<connection>scm:git:https://github.com/ingraban/tycho-example.git</connection>
-		<developerConnection>scm:git:https://github.com/ingraban/tycho-example.git</developerConnection>
+		<connection>scm:git:git://github.com/ingraban/tycho-example.git</connection>
+		<developerConnection>scm:git:git://github.com/ingraban/tycho-example.git</developerConnection>
+		<!-- 
+		<developerConnection>scm:git:git@github.com:ingraban/tycho-example.git</developerConnection>
+		 -->
 	  <tag>HEAD</tag>
   </scm>
 </project>
