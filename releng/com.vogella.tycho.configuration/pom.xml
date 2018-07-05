@@ -6,7 +6,8 @@
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<properties>
-		<!--  tycho.version>1.2.0</tycho.version-->
+		<tycho.version>1.2.0</tycho.version>
+		<tycho-version>1.2.0</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- Skip the deployment here, submodules can override this property -->
 		<!--maven.deploy.skip>true</maven.deploy.skip -->
