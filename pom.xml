@@ -19,7 +19,7 @@
 	</modules>
 
   <scm>
-    <tag>com.vogella.tycho.root-1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 </project>
 
