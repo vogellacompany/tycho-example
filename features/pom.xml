@@ -14,27 +14,4 @@
 	<modules>
 		<module>com.vogella.tycho.feature</module>
 	</modules>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-scm-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>default-cli</id>
-						<goals>
-							<goal>add</goal>
-							<goal>checkin</goal>
-						</goals>
-						<configuration>
-							<includes>**/META-INF/MANIFEST.MF, **/feature.xml,
-								**/*.product,**/category.xml</includes>
-							<excludes>features/com.vogella.tycho.feature/target/**</excludes>
-							<message>Changing the Eclipse files versions</message>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
 </project>
