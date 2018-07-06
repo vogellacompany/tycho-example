@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="com.vogella.tycho.feature"
+      label="Feature"
+      version="1.0.0.201806051602"
+      provider-name="VOGELLA">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="com.vogella.tycho.plugin1"
+         download-size="4"
+         install-size="3"
+         version="1.0.0.201806051602"
+         unpack="false"/>
+
+   <plugin
+         id="com.vogella.tycho.rcp"
+         download-size="10"
+         install-size="17"
+         version="1.0.0.201611210013"
+         unpack="false"/>
+
+   <plugin
+         id="com.vogella.tycho.p2.ui"
+         download-size="13"
+         install-size="22"
+         version="1.0.0.201606072303"
+         unpack="false"/>
+
+   <plugin
+         id="org.slf4j.api"
+         download-size="33"
+         install-size="60"
+         version="1.7.2.v20121108-1250"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.core"
+         download-size="380"
+         install-size="720"
+         version="1.0.7.v20121108-1250"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.slf4j"
+         download-size="10"
+         install-size="15"
+         version="1.0.7.v201505121915"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="ch.qos.logback.classic"
+         download-size="255"
+         install-size="516"
+         version="1.0.7.v20121108-1250"
+         unpack="false"/>
+
+   <plugin
+         id="com.vogella.logging.config"
+         download-size="3"
+         install-size="3"
+         version="1.0.0.201611210013"
+         unpack="false"/>
+
+</feature>

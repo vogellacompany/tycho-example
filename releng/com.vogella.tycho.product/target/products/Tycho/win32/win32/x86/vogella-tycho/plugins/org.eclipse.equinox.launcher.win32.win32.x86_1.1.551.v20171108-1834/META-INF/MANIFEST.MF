@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: org.eclipse.equinox.launcher.win32.win32.x86; sin
+ gleton:=true
+Archiver-Version: Plexus Archiver
+Built-By: genie.releng
+Bundle-ManifestVersion: 2
+Eclipse-PlatformFilter: (& (osgi.ws=win32) (osgi.os=win32) (osgi.arch=
+ x86))
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/equino
+ x/rt.equinox.framework.git;path="bundles/org.eclipse.equinox.launcher
+ .win32.win32.x86";tag="M20171108-1700";commitId=ddc5885182d11e3eddbd6
+ 34eb864dc89bcd87fac
+Bundle-Vendor: %providerName
+Fragment-Host: org.eclipse.equinox.launcher;bundle-version="[1.0.0,1.5
+ .0)"
+Bundle-Name: %pluginName
+Bundle-Version: 1.1.551.v20171108-1834
+Bundle-Localization: launcher.win32.win32.x86
+Created-By: Apache Maven 3.3.3
+Build-Jdk: 1.8.0_131
+Eclipse-BundleShape: dir
+
+Name: about.html
+SHA-256-Digest: VPMitIIkEm99NLfkFf/bqCv7gqDh+SdCqyIrbu4QETQ=
+
+Name: launcher.win32.win32.x86.properties
+SHA-256-Digest: g/INX6pyBbLzC/H9m1O+R26Wd+HD/7RPjDdEjXQCHSk=
+
+Name: eclipse_1630.dll
+SHA-256-Digest: L4daCP7BWWoH3RIfmIwbIrSp6wrbucSnPpu2YOnmZ3M=
+
