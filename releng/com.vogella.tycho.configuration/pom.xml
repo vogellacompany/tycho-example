@@ -158,12 +158,12 @@
 							<includes>**/META-INF/MANIFEST.MF, **/feature.xml,
 								**/*.product,**/category.xml</includes>
 							<excludes>**/target/**</excludes>
-							<!-- excludes>**/bundles/*.releaseBackup</excludes>
+							<excludes>**/bundles/*.releaseBackup</excludes>
 							<excludes>**/features/*.releaseBackup</excludes>
 							<excludes>**/tests/*.releaseBackup</excludes>
 							<excludes>**/releng/*.releaseBackup</excludes>
 							<excludes>**/*.releaseBackup</excludes>
-							<excludes>**/release.properties</excludes-->
+							<excludes>**/release.properties</excludes>
 							<message>Changing the Eclipse files versions</message>
 						</configuration>
 					</execution>

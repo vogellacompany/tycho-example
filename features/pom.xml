@@ -1,17 +1,40 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.vogella.tycho</groupId>
-    <artifactId>com.vogella.tycho.features</artifactId>
-    <version>1.0.0</version>
-    <packaging>pom</packaging>
-    
-    <parent>
-        <groupId>com.vogella.tycho</groupId>
-        <artifactId>com.vogella.tycho.root</artifactId>
-        <version>1.0.0</version>
-    </parent>
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.vogella.tycho</groupId>
+	<artifactId>com.vogella.tycho.features</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
 
-    <modules>
-        <module>com.vogella.tycho.feature</module>
-    </modules>
+	<parent>
+		<groupId>com.vogella.tycho</groupId>
+		<artifactId>com.vogella.tycho.root</artifactId>
+		<version>1.0.0</version>
+	</parent>
+
+	<modules>
+		<module>com.vogella.tycho.feature</module>
+	</modules>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>default-cli</id>
+						<goals>
+							<goal>add</goal>
+							<goal>checkin</goal>
+						</goals>
+						<configuration>
+							<includes>**/META-INF/MANIFEST.MF, **/feature.xml,
+								**/*.product,**/category.xml</includes>
+							<excludes>features/com.vogella.tycho.feature/target/**</excludes>
+							<message>Changing the Eclipse files versions</message>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>
