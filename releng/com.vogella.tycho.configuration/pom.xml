@@ -159,7 +159,11 @@
 								**/*.product,**/category.xml</includes>
 							<excludes>**/target/**,
 								bundles/com.vogella.logging.config/.polyglot.build.properties,
-								features/com.vogella.tycho.feature/.polyglot.build.properties,features/com.vogella.tycho.feature/.polyglot.build.properties.releaseBackup,features/pom.xml.releaseBackup,pom.xml.releaseBackup,release.properties</excludes>
+								features/com.vogella.tycho.feature/.polyglot.build.properties,
+								features/com.vogella.tycho.feature/.polyglot.build.properties.releaseBackup,
+								features/pom.xml.releaseBackup,
+								pom.xml.releaseBackup,
+								release.properties</excludes>
 							<message>Changing the Eclipse files versions</message>
 						</configuration>
 					</execution>
