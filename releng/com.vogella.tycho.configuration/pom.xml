@@ -158,6 +158,7 @@
 							<includes>**/META-INF/MANIFEST.MF, **/feature.xml,
 								**/*.product,**/category.xml</includes>
 							<excludes>**/target/**</excludes>
+							<excludes>./features/com.vogella.tycho.feature/target/**</excludes>
 							<excludes>**/bundles/*.releaseBackup</excludes>
 							<excludes>**/features/*.releaseBackup</excludes>
 							<excludes>**/tests/*.releaseBackup</excludes>
