@@ -5,8 +5,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.vogella.tycho</groupId>
-		<artifactId>com.vogella.tycho.tests</artifactId>
+		<artifactId>tests</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../pom.tycho</relativePath>
 	</parent>
 
 	<artifactId>com.vogella.tycho.rcp.it.tests</artifactId>
