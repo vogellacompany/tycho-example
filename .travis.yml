@@ -1,7 +1,7 @@
 language: java
-# use Java 8
+# use Java11
 jdk:
-- oraclejdk8
+- oraclejdk11
 
 # see https://blog.travis-ci.com/2014-12-17-faster-builds-with-container-based-infrastructure
 sudo: false
