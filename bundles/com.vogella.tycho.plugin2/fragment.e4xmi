@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_akIvcPrCEeWOAtVYJ_uodg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_b1nlcPrCEeWOAtVYJ_uodg" featurename="addons" parentElementId="xpath:/">
+    <elements xsi:type="application:Addon" xmi:id="_h5IAAPrCEeWOAtVYJ_uodg" elementId="com.vogella.tycho.plugin1.addon.0" contributionURI="bundleclass://com.vogella.tycho.plugin1/com.vogella.tycho.plugin1.addons.Plugin1Addon"/>
+  </fragments>
+</fragment:ModelFragments>
