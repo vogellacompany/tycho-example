@@ -41,7 +41,7 @@
 				<configuration>
 					<products>
 						<product>
-							<id>Tycho</id>
+							<id>com.vogella.tycho.product</id>
 							<rootFolder>vogella-tycho</rootFolder>
 						</product>
 					</products>
