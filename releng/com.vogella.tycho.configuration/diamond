@@ -1,0 +1,24 @@
+Target Platform migration:
+
+* IIRC the process of cloning the Eclipse update sites was a bit complex, I suggest to move that bit also to Maven Tycho if this is not yet done https://www.vogella.com/tutorials/EclipseTycho/article.html#mirroring-a-remote-update-site
+
+Java 8 -> Java 11
+
+Platform moves to Java 11, upcoming version 2.0.0 currently only supports BREE of Java 11, also move to Java 11 is relatively big as lots of classes have been removed like JAXB.
+CORBA needs to be removed.
+
+
+Build order:
+
+Might be https://bugs.eclipse.org/bugs/show_bug.cgi?id=564927 which is in the works for 4.17 (2020-09).Current workaround should be restart and a clean-build.
+
+Please comment also on the bug that you are affected so that the PDE developer gets more motivation to look at this.
+
+Description	Resource	Path	Location	Type
+Referenced identifier 'uk.ac.diamond.scisoft.analysis.rcp.preferences.root' in attribute 'category' cannot be found	plugin.xml	/uk.ac.diamond.scisoft.analysis.osgi	line 7	Plug-in Problem
+Referenced identifier 'uk.ac.diamond.scisoft.analysis.rcp.preferences.root' in attribute 'category' cannot be found	plugin.xml	/uk.ac.diamond.scisoft.qstatMonitor	line 18	Plug-in Problem
+Referenced identifier 'uk.ac.diamond.scisoft.analysis.rcp' in attribute 'category' cannot be found	plugin.xml	/uk.ac.diamond.scisoft.qstatMonitor	line 8	Plug-in Problem
+
+
+
+

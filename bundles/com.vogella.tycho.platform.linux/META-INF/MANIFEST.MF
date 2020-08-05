@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Linux
+Bundle-SymbolicName: com.vogella.tycho.platform.linux
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VOGELLA
+Automatic-Module-Name: com.vogella.tycho.platform.linux
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Eclipse-PlatformFilter: (& (osgi.os=linux) (osgi.arch=x86_64))
+Fragment-Host: com.vogella.tycho.platform
