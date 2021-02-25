@@ -11,6 +11,6 @@ Require-Bundle: org.eclipse.e4.ui.model.workbench,
  org.eclipse.swt,
  org.eclipse.osgi.services,
  org.eclipse.e4.core.di.extensions
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-11
 Import-Package: javax.inject;version="1.0.0"
 Export-Package: com.vogella.tycho.plugin1.addons
