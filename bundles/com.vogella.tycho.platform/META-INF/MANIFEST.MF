@@ -5,4 +5,4 @@ Bundle-SymbolicName: com.vogella.tycho.platform
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: VOGELLA
 Automatic-Module-Name: com.vogella.tycho.platform
-Bundle-RequiredExecutionEnvironment: JavaSE-14
+Bundle-RequiredExecutionEnvironment: JavaSE-11
