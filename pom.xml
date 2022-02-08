@@ -11,9 +11,13 @@
 		     - and here: -->
 		<tycho.version>2.6.0</tycho.version>
 
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- To skip integration tests use: mvn verify -Dskip.ui-tests=true -->
+		<skip.ui-tests>false</skip.ui-tests>
+
 		<!-- Skip the deployment here, submodules can override this property -->
 		<!--maven.deploy.skip>true</maven.deploy.skip-->
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<build>
