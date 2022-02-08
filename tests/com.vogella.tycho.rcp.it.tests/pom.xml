@@ -5,9 +5,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.vogella.tycho</groupId>
-		<artifactId>tests</artifactId>
+		<artifactId>com.vogella.tycho.tests</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
-		<relativePath>../pom.tycho</relativePath>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>com.vogella.tycho.rcp.it.tests</artifactId>
@@ -21,6 +21,7 @@
 				<artifactId>tycho-surefire-plugin</artifactId>
 				<version>${tycho.version}</version>
 				<configuration>
+					<skipTests>${skip.ui-tests}</skipTests>
 					<useUIHarness>true</useUIHarness>
 					<useUIThread>false</useUIThread>
 					<product>com.vogella.tycho.rcp.product</product>
