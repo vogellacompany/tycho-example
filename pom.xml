@@ -5,12 +5,16 @@
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<properties>
-		<tycho.version>2.3.0</tycho.version>
+
+		<!-- Tycho version (<https://github.com/eclipse/tycho/blob/master/RELEASE_NOTES.md>) specified in:
+		     - .mvn/extensions.xml
+		     - and here: -->
+		<tycho.version>2.6.0</tycho.version>
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<!-- Skip the deployment here, submodules can override this property -->
 		<!--maven.deploy.skip>true</maven.deploy.skip-->
 	</properties>
-
 
 	<build>
 		<pluginManagement>
