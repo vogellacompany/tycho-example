@@ -13,7 +13,7 @@
     </parent>
 
     <modules>
-        <!--	   <module>com.vogella.tycho.plugin1.tests</module> -->
+        <module>com.vogella.tycho.plugin1.tests</module>
         <module>com.vogella.tycho.rcp.tests</module>
         <!--	<module>com.vogella.tycho.rcp.it.tests</module> -->
     </modules>
