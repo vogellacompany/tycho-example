@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Junit4
+Bundle-SymbolicName: com.vogella.tycho.plugin1.test.junit4
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VOGELLA
+Fragment-Host: com.vogella.tycho.plugin1;bundle-version="1.0.0"
+Automatic-Module-Name: com.vogella.tycho.plugin1.test.junit4
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Import-Package: org.junit;version="4.13.2"
