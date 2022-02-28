@@ -29,26 +29,43 @@
 			<repository location="https://download.eclipse.org/releases/latest"/>
 			<unit id="org.junit.jupiter.api" version="0.0.0"/>
 			<unit id="org.junit.jupiter.engine" version="0.0.0"/>
+			<unit id="org.eclipse.jdt.junit5.runtime" version="0.0.0"/>
 			<unit id="org.junit" version="0.0.0"/>
 			<unit id="org.hamcrest.core" version="0.0.0"/>
 		</location>
-		<location includeDependencyScope="compile" includeSource="true" missingManifest="generate" type="Maven">
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-core</artifactId>
-			<version>4.3.1</version>
-			<type>jar</type>
-		</location>
-		<location includeSource="true" missingManifest="generate" type="Maven">
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-junit-jupiter</artifactId>
-			<version>4.3.1</version>
-			<type>jar</type>
-		</location>
-		<location includeSource="true" missingManifest="generate" type="Maven">
-			<groupId>org.hamcrest</groupId>
-			<artifactId>hamcrest</artifactId>
-			<version>2.2</version>
-			<type>jar</type>
+	
+		
+		<location includeDependencyDepth="infinite" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
+
+			<feature id="test.libraries.feature" label="Test library feature" version="1.0.0.qualifier">
+   
+			</feature>
+			<dependencies>
+				<dependency>
+					<groupId>org.mockito</groupId>
+					<artifactId>mockito-junit-jupiter</artifactId>
+					<version>4.3.1</version>
+					<type>jar</type>
+				</dependency>
+				<dependency>
+					<groupId>org.hamcrest</groupId>
+					<artifactId>hamcrest</artifactId>
+					<version>2.2</version>
+					<type>jar</type>
+				</dependency>
+				<dependency>
+					<groupId>org.mockito</groupId>
+					<artifactId>mockito-inline</artifactId>
+					<version>4.3.1</version>
+					<type>jar</type>
+				</dependency>
+				<dependency>
+ 				   <groupId>org.objenesis</groupId>
+    			   <artifactId>objenesis</artifactId>
+    				<version>3.2</version>
+				</dependency>
+				
+			</dependencies>
 		</location>
 	</locations>
 </target>
