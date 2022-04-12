@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Fatjar
+Bundle-SymbolicName: com.vogella.tycho.fatjar
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: VOGELLA
+Automatic-Module-Name: com.vogella.tycho.fatjar
+Bundle-RequiredExecutionEnvironment: JavaSE-11
