@@ -143,5 +143,6 @@
 		<module>com.vogella.tycho.plugin1.tests.junit4</module>
 		<module>com.vogella.tycho.rcp.tests</module>
 		<module>com.vogella.tycho.rcp.it.tests</module>
+		<module>com.vogella.tycho.fatjar</module>
 	</modules>
 </project>
