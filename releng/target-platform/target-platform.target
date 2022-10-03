@@ -23,18 +23,18 @@
 		</location>
 		<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 			<repository location="https://download.eclipse.org/releases/latest"/>
-			<unit id="org.junit.jupiter.api" version="0.0.0"/>
-			<unit id="org.junit.jupiter.engine" version="0.0.0"/>
+			<unit id="junit-jupiter-api" version="0.0.0"/>
+			<unit id="junit-jupiter-engine" version="0.0.0"/>
 			<unit id="org.eclipse.jdt.junit5.runtime" version="0.0.0"/>
 			<unit id="org.junit" version="0.0.0"/>
 			<unit id="org.hamcrest.core" version="0.0.0"/>
 		</location>
-	
-		
+
+
 		<location includeDependencyDepth="infinite" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven">
 
 			<feature id="test.libraries.feature" label="Test library feature" version="1.0.0.qualifier">
-   
+
 			</feature>
 			<dependencies>
 				<dependency>
@@ -60,7 +60,7 @@
     			   <artifactId>objenesis</artifactId>
     				<version>3.2</version>
 				</dependency>
-				
+
 			</dependencies>
 		</location>
 	</locations>
