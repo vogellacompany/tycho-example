@@ -10,7 +10,7 @@
         specified in:
 		     - .mvn/extensions.xml
 		     - and here: -->
-        <tycho.version>3.0.5</tycho.version>
+        <tycho.version>4.0.2</tycho.version>
 
         <!-- To skip integration tests use: mvn verify -Dskip.ui-tests=true -->
         <skip.ui-tests>false</skip.ui-tests>
