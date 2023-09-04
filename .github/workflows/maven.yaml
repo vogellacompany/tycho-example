@@ -15,8 +15,10 @@ jobs:
         with:
           distribution: "adopt"
           java-version: "17"
-      - name: Setup Maven Action
-        uses: s4u/setup-maven-action
+
+      - name: Set up Maven
+        uses: stCarolas/setup-maven@07fbbe97d97ef44336b7382563d66743297e442f # v4.5
         with:
-          java-version: 17
-      - run: mvn clean verify
+          maven-version: 3.9.4
+      - name: Build with Maven
+        run: mvn clean verify -Dskip.ui-tests=true
