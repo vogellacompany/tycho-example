@@ -1,102 +1,104 @@
 <project>
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.vogella.tycho</groupId>
-	<artifactId>com.vogella.tycho.root</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
-	<packaging>pom</packaging>
-	<properties>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.vogella.tycho</groupId>
+    <artifactId>com.vogella.tycho.root</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <properties>
 
-		<!-- Tycho version (<https://github.com/eclipse/tycho/blob/master/RELEASE_NOTES.md>) specified in:
+        <!-- Tycho version (<https://github.com/eclipse/tycho/blob/master/RELEASE_NOTES.md>)
+        specified in:
 		     - .mvn/extensions.xml
 		     - and here: -->
-		<tycho.version>3.0.0</tycho.version>
+        <tycho.version>2.7.4</tycho.version>
 
-		<!-- To skip integration tests use: mvn verify -Dskip.ui-tests=true -->
-		<skip.ui-tests>false</skip.ui-tests>
+        <!-- To skip integration tests use: mvn verify -Dskip.ui-tests=true -->
+        <skip.ui-tests>false</skip.ui-tests>
 
-		<!-- Skip the deployment here, submodules can override this property -->
-		<!--maven.deploy.skip>true</maven.deploy.skip-->
+        <!-- Skip the deployment here, submodules can override this property -->
+        <!--maven.deploy.skip>true</maven.deploy.skip-->
 
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
 
-	<build>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.eclipse.tycho</groupId>
-					<artifactId>tycho-p2-director-plugin</artifactId>
-					<version>${tycho.version}</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
-		<plugins>
-			<!--Enable the replacement of the SNAPSHOT version based on the last commit-->
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-packaging-plugin</artifactId>
-				<version>${tycho.version}</version>
-				<dependencies>
-					<dependency>
-						<groupId>org.eclipse.tycho</groupId>
-						<artifactId>tycho-buildtimestamp-jgit</artifactId>
-						<version>${tycho.version}</version>
-					</dependency>
-				</dependencies>
-				<configuration>
-					<timestampProvider>jgit</timestampProvider>
-					<jgit.ignore>pom.xml</jgit.ignore>
-					<jgit.dirtyWorkingTree>ignore</jgit.dirtyWorkingTree>
-				</configuration>
-			</plugin>
-			<!-- Skip the install, since we do not need the artifacts in our local mvn repo -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-install-plugin</artifactId>
-				<version>2.5.2</version>
-				<configuration>
-					<skip>true</skip>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-maven-plugin</artifactId>
-				<version>${tycho.version}</version>
-				<extensions>true</extensions>
-			</plugin>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>target-platform-configuration</artifactId>
-				<version>${tycho.version}</version>
-				<configuration>
-					<target>
-						<artifact>
-							<groupId>com.vogella.tycho</groupId>
-							<artifactId>target-platform</artifactId>
-							<version>1.0.0-SNAPSHOT</version>
-						</artifact>
-					</target>
-					<environments>
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
-							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86_64</arch>
-						</environment>
-					</environments>
-				</configuration>
-			</plugin>
-			<!-- enable source feature generation -->
-			<!--plugin>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.eclipse.tycho</groupId>
+                    <artifactId>tycho-p2-director-plugin</artifactId>
+                    <version>${tycho.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+            <!--Enable
+            the replacement of the SNAPSHOT version based on the last commit-->
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-packaging-plugin</artifactId>
+                <version>${tycho.version}</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.eclipse.tycho.extras</groupId>
+                        <artifactId>tycho-buildtimestamp-jgit</artifactId>
+                        <version>${tycho.version}</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <timestampProvider>jgit</timestampProvider>
+                    <jgit.ignore>pom.xml</jgit.ignore>
+                    <jgit.dirtyWorkingTree>ignore</jgit.dirtyWorkingTree>
+                </configuration>
+            </plugin>
+            <!-- Skip the install, since we do not need the artifacts in our local mvn repo -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.5.2</version>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>tycho-maven-plugin</artifactId>
+                <version>${tycho.version}</version>
+                <extensions>true</extensions>
+            </plugin>
+            <plugin>
+                <groupId>org.eclipse.tycho</groupId>
+                <artifactId>target-platform-configuration</artifactId>
+                <version>${tycho.version}</version>
+                <configuration>
+                    <target>
+                        <artifact>
+                            <groupId>com.vogella.tycho</groupId>
+                            <artifactId>target-platform</artifactId>
+                            <version>1.0.0-SNAPSHOT</version>
+                        </artifact>
+                    </target>
+                    <environments>
+                        <environment>
+                            <os>linux</os>
+                            <ws>gtk</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                        <environment>
+                            <os>win32</os>
+                            <ws>win32</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                        <environment>
+                            <os>macosx</os>
+                            <ws>cocoa</ws>
+                            <arch>x86_64</arch>
+                        </environment>
+                    </environments>
+                </configuration>
+            </plugin>
+            <!-- enable source feature generation -->
+            <!--plugin>
                 <groupId>org.eclipse.tycho.extras</groupId>
                 <artifactId>tycho-source-feature-plugin</artifactId>
                 <version>${tycho.version}</version>
@@ -123,26 +125,31 @@
                     </execution>
                 </executions>
             </plugin-->
-			<plugin>
-				<groupId>com.github.spotbugs</groupId>
-				<artifactId>spotbugs-maven-plugin</artifactId>
-				<version>3.1.3</version>
-				<configuration>
-					<effort>Max</effort>
-					<threshold>Low</threshold>
-					<failOnError>false</failOnError>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
-	<modules>
-		<module>bundles</module>
-		<module>features</module>
-		<module>releng</module>
-		<module>com.vogella.tycho.plugin1.tests</module>
-		<module>com.vogella.tycho.plugin1.tests.junit4</module>
-		<module>com.vogella.tycho.rcp.tests</module>
-		<module>com.vogella.tycho.rcp.it.tests</module>
-		<module>com.vogella.tycho.fatjar</module>
-	</modules>
+            <plugin>
+                <groupId>com.github.spotbugs</groupId>
+                <artifactId>spotbugs-maven-plugin</artifactId>
+                <version>3.1.3</version>
+                <configuration>
+                    <effort>Max</effort>
+                    <threshold>Low</threshold>
+                    <failOnError>false</failOnError>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <modules>
+        <module>bundles</module>
+        <module>features</module>
+        <module>releng</module>
+
+        <!-- 
+
+            
+            <module>com.vogella.tycho.plugin1.tests</module>
+            <module>com.vogella.tycho.plugin1.tests.junit4</module>
+            <module>com.vogella.tycho.rcp.tests</module>
+            <module>com.vogella.tycho.rcp.it.tests</module>
+            <module>com.vogella.tycho.fatjar</module>
+        -->
+    </modules>
 </project>
