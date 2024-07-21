@@ -5,3 +5,4 @@ target/
 bin/
 .polyglot*
 pom.tycho
+.tycho-consumer-pom.xml
