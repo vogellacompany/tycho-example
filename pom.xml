@@ -127,5 +127,6 @@
         <module>tests/com.vogella.tycho.plugin1.tests.junit4</module>
         <module>tests/com.vogella.tycho.rcp.tests</module>
         <module>tests/com.vogella.tycho.rcp.it.tests</module>
+        <module>tests/com.vogella.tycho.plugin1.test.junit4</module>
     </modules>
 </project>
