@@ -13,7 +13,7 @@
         </location>
         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner"
             includeSource="true" type="InstallableUnit">
-            <repository location="https://download.eclipse.org/releases/2025-12" />
+            <repository location="https://download.eclipse.org/releases/2022-12" />
             <unit id="org.eclipse.platform.sdk"/>
             <unit id="org.eclipse.equinox.sdk.feature.group"/>
             <unit id="org.eclipse.equinox.p2.sdk.feature.group"/>
@@ -84,6 +84,24 @@
                     <groupId>junit</groupId>
                     <artifactId>junit</artifactId>
                     <version>4.13.2</version>
+                    <type>jar</type>
+                </dependency>
+                <dependency>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-classic</artifactId>
+                    <version>1.2.11</version>
+                    <type>jar</type>
+                </dependency>
+                <dependency>
+                    <groupId>ch.qos.logback</groupId>
+                    <artifactId>logback-core</artifactId>
+                    <version>1.2.11</version>
+                    <type>jar</type>
+                </dependency>
+                <dependency>
+                    <groupId>org.slf4j</groupId>
+                    <artifactId>slf4j-api</artifactId>
+                    <version>1.7.32</version>
                     <type>jar</type>
                 </dependency>
             </dependencies>
