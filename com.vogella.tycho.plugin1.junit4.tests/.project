@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>com.vogella.tycho.plugin1.tests.junit4</name>
+	<name>com.vogella.tycho.plugin1.junit4.tests</name>
 	<comment></comment>
 	<projects>
 	</projects>
