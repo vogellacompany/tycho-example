@@ -20,7 +20,7 @@
         </location>
         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner"
             includeSource="true" type="InstallableUnit">
-            <repository location="https://download.eclipse.org/releases/2025-09" />
+            <repository location="https://download.eclipse.org/releases/2022-12" />
             <unit id="org.eclipse.platform.sdk"/>
             <unit id="org.eclipse.equinox.sdk.feature.group"/>
             <unit id="org.eclipse.equinox.p2.sdk.feature.group"/>
