@@ -1,4 +1,4 @@
-package com.vogella.tycho.plugin1.test.junit4;
+package com.vogella.tycho.plugin1.tests.junit4;
 
 
 import static org.junit.Assert.assertNotNull;
