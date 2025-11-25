@@ -4,13 +4,6 @@
     <locations>
         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner"
             includeSource="true" type="InstallableUnit">
-            <repository
-                location="https://download.eclipse.org/tools/orbit/downloads/drops/R20211213173813/repository" />
-            <unit id="ch.qos.logback.slf4j" version="0.0.0" />
-            <unit id="ch.qos.logback.slf4j.source" version="0.0.0" />
-        </location>
-        <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner"
-            includeSource="true" type="InstallableUnit">
             <repository location="https://download.eclipse.org/technology/swtbot/releases/latest" />
             <unit id="org.eclipse.swtbot.eclipse.feature.group"/>
             <unit id="org.eclipse.swtbot.eclipse.test.junit.feature.group"/>
@@ -20,19 +13,10 @@
         </location>
         <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner"
             includeSource="true" type="InstallableUnit">
-            <repository location="https://download.eclipse.org/releases/2022-12" />
+            <repository location="https://download.eclipse.org/releases/2025-12" />
             <unit id="org.eclipse.platform.sdk"/>
             <unit id="org.eclipse.equinox.sdk.feature.group"/>
             <unit id="org.eclipse.equinox.p2.sdk.feature.group"/>
-        </location>
-        <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner"
-            includeSource="true" type="InstallableUnit">
-            <repository location="https://download.eclipse.org/releases/2020-06" />
-            <unit id="org.junit.jupiter.api" version="5.7.0" />
-            <unit id="org.junit.jupiter.engine" version="5.7.0" />
-            <unit id="org.eclipse.jdt.junit5.runtime" version="0.0.0" />
-            <unit id="org.junit" version="0.0.0" />
-            <unit id="org.hamcrest.core" version="0.0.0" />
         </location>
 
         <location includeDependencyDepth="infinite" includeDependencyScopes="compile"
@@ -66,7 +50,42 @@
                     <artifactId>objenesis</artifactId>
                     <version>3.2</version>
                 </dependency>
-
+                <dependency>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter-api</artifactId>
+                    <version>5.7.0</version>
+                    <type>jar</type>
+                </dependency>
+                <dependency>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter-engine</artifactId>
+                    <version>5.7.0</version>
+                    <type>jar</type>
+                </dependency>
+                <dependency>
+                    <groupId>org.junit.jupiter</groupId>
+                    <artifactId>junit-jupiter-params</artifactId>
+                    <version>5.7.0</version>
+                    <type>jar</type>
+                </dependency>
+                <dependency>
+                    <groupId>org.junit.platform</groupId>
+                    <artifactId>junit-platform-commons</artifactId>
+                    <version>1.7.0</version>
+                    <type>jar</type>
+                </dependency>
+                <dependency>
+                    <groupId>org.junit.platform</groupId>
+                    <artifactId>junit-platform-engine</artifactId>
+                    <version>1.7.0</version>
+                    <type>jar</type>
+                </dependency>
+                <dependency>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                    <version>4.13.2</version>
+                    <type>jar</type>
+                </dependency>
             </dependencies>
         </location>
     </locations>
