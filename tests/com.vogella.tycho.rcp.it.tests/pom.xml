@@ -7,7 +7,7 @@
 		<groupId>com.vogella.tycho</groupId>
 		<artifactId>com.vogella.tycho.root</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
-		<relativePath>../pom.xml</relativePath>
+		<relativePath>../../pom.xml</relativePath>
 	</parent>
 
 	<artifactId>com.vogella.tycho.rcp.it.tests</artifactId>
