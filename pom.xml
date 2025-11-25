@@ -124,7 +124,6 @@
         <module>features</module>
         <module>releng</module>
         <module>tests/com.vogella.tycho.plugin1.tests</module>
-        <module>tests/com.vogella.tycho.plugin1.junit4.tests</module>
         <module>tests/com.vogella.tycho.rcp.tests</module>
         <module>tests/com.vogella.tycho.rcp.it.tests</module>
     </modules>
