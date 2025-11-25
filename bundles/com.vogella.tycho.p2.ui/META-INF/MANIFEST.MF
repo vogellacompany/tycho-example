@@ -3,9 +3,9 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Ui
 Bundle-SymbolicName: com.vogella.tycho.p2.ui;singleton:=true
 Bundle-Version: 1.0.0.qualifier
+Import-Package: jakarta.inject;version="2.0.1"
 Bundle-Vendor: VOGELLA
 Require-Bundle: org.eclipse.core.runtime,
- javax.inject,
  org.eclipse.osgi,
  org.eclipse.jface,
  org.eclipse.e4.ui.services,
@@ -17,5 +17,4 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.equinox.p2.engine,
  org.eclipse.equinox.p2.repository;bundle-version="2.3.200",
  org.eclipse.equinox.p2.metadata;bundle-version="2.3.100"
-Bundle-RequiredExecutionEnvironment: JavaSE-11
-Import-Package: javax.annotation;version="1.2.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-21

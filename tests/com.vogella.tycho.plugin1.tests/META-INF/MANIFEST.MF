@@ -5,9 +5,7 @@ Bundle-SymbolicName: com.vogella.tycho.plugin1.tests
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: VOGELLA
 Fragment-Host: com.vogella.tycho.plugin1;bundle-version="1.0.0"
-Bundle-RequiredExecutionEnvironment: JavaSE-11
-Require-Bundle: org.mockito.junit-jupiter;bundle-version="4.3.1",
- wrapped.org.mockito.mockito-inline;bundle-version="4.3.1",
- org.mockito.mockito-core;bundle-version="4.3.1"
-Import-Package: org.junit;version="4.13.0",
- org.junit.jupiter.api;version="5.7.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-21
+Import-Package: org.junit.jupiter.api;version="5.13.4",
+ org.mockito;version="[5.12.0,6.0.0)",
+ org.mockito.stubbing;version="[5.12.0,6.0.0)"
