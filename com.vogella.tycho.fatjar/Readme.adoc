@@ -1,4 +1,0 @@
-== Example for Fatjar creation with Maven Tycho
-
-Eclipse UI allows to export a FAT Jar. 
-The project demonstrates the example with the usage of Maven
